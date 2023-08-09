@@ -24,7 +24,10 @@ NodeJS app deployed on App Engine, with authentication against Cloud Identity. T
 
 ## Setup
 
-1. Find out your GCP project's id and number from the dashboard in the cloud console, and update the following variables in the `terraform.tfvars.json` file. Replace `YOUR_PROJECT_NMR`, `YOUR_PROJECT_ID`,  `YOUR_PROJECT_REGION`, `YOUR_OAUTH_CLIENT_ID`, and `YOUR_OAUTH_CLIENT_SECRET` with the correct values. 
+1. Follow the following procedure to create a Web Application Oauth Credentials in your GCP project [https://developers.google.com/workspace/guides/create-credentials#oauth-client-id](https://developers.google.com/workspace/guides/create-credentials#oauth-client-id). Use `https://YOUR_PROJECT_ID.ew.r.appspot.com/oauth2callback` as an Authorized redirect URI.
+
+
+2. Find out your GCP project's id and number from the dashboard in the cloud console, and update the following variables in the `terraform.tfvars.json` file. Replace `YOUR_PROJECT_NMR`, `YOUR_PROJECT_ID`,  `YOUR_PROJECT_REGION`, `YOUR_OAUTH_CLIENT_ID`, and `YOUR_OAUTH_CLIENT_SECRET` with the correct values. 
 
 ```shell
 {

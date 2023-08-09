@@ -9,7 +9,16 @@ NodeJS app deployed on App Engine, with authentication against Cloud Identity. T
 ## Project structure
 ```
 .
-
+|-- README.md
+|-- app
+|   |-- app.yaml
+|   |-- package.json
+|   `-- server.js
+|-- appengine.tf
+|-- config.tf
+|-- install.sh
+|-- terraform.tfvars.json
+`-- vars.tf
 
 ```
 
